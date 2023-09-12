@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Main */
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(28, 49, 57);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+
+/* Navbar logo */
+#logo{
+    margin: -17px 30px;
+}
+
+#logo img{
+    height: 95px;
+    margin: 3px 6px;
+}
+
+/* Navbar List */
+#items ul {
+    display: flex;
+}
+
+#items ul li{
+    list-style: none;
+}
+
+#items ul li a {
+    color: white; 
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Navbar Icons */
+#icon {
+    color: white;
+}
+
+#icon i{
+    padding: 5px 11px;
+    margin-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Navbar Hover */
+#navbar ul li a:hover{
+    color: rgb(28, 49, 57);
+    background-color: white;
+}
+
+#navbar i:hover{
+    color: rgb(28, 49, 57);
+    background-color: white;
+}
+
+/* Content */
+#content {
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+    display: flex;
+}
+
+/* left */
+#left {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(33, 55, 63);
+    padding: 80px 130px;
+}
+
+#left h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.497);
+    font-family: Cormorant, serif;
+}
+
+#left h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 85px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Cormorant', serif;
+}
+
+#left p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#left button{
+    background-color: rgb(14, 28, 38);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 45px;
+    text-transform: uppercase;  
+    cursor: pointer;  
+} 
+
+/* right */
+#right {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(33, 55, 63);
+    position: relative;
+    padding: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.elem {
+    height: 450px;
+    width: 320px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.elem h4{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color:rgb(14, 28, 38);
+    padding: 17px 34px;
+    font-weight: 800;
+    border-radius: 6px;
+    color: white;
+    opacity: 0.85;
+}
+
+
+
